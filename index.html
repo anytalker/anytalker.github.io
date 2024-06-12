@@ -19,10 +19,13 @@
             width: 80%;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
-        .pdf-viewer {
+        .pdf-container {
             margin: 20px auto;
-            border: 1px solid #ccc;
-            padding: 10px;
+            text-align: left;
+        }
+        .pdf-thumbnail {
+            width: 200px;
+            cursor: pointer;
         }
         .video-container {
             margin: 20px auto;
@@ -38,16 +41,19 @@
     <div class="container">
         <h1>Supplementary Materials: AnyTalk: Multi-modal Driven Multi-domain Talking Head Generation</h1>
         <h2>Anonymous</h2>
-                <div class="video-container">
+        <div class="video-container">
             <video controls>
                 <source src="static/supp_videos.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
-        <div class="pdf-viewer">
-            <embed src="static/supplement_file.pdf" type="application/pdf" width="500" height="600"></embed>
+        <div class="pdf-container">
+            <a href="static/supplement_file.pdf" target="_blank">
+                <img src="static/thumbnail_image.png" alt="PDF Thumbnail" class="pdf-thumbnail">
+            </a>
+            <br>
+            <a href="static/supplement_file.pdf" target="_blank">View the PDF</a>
         </div>
-
     </div>
 </body>
 </html>
