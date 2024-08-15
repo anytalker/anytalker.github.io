@@ -1,59 +1,261 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Supplementary Materials</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            padding: 20px;
-            background-color: #f4f4f4;
-            color: #333;
-            text-align: center;
-        }
-        .container {
-            background: white;
-            margin: auto;
-            padding: 20px;
-            width: 80%;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        .pdf-container {
-            margin: 20px auto;
-            text-align: center;
-        }
-        .pdf-thumbnail {
-            width: 200px;
-            cursor: pointer;
-        }
-        .video-container {
-            margin: 20px auto;
-            max-width: 960px;
-        }
-        video {
-            width: 100%;
-            height: auto;
-        }
-    </style>
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<!-- Title -->
+<title> AnyTalk: Multi-modal Driven Multi-domain Talking Head Generation </title>
+<link href="./src/css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="./src/css/bulma.min.css">
+<link rel="stylesheet" href="./src/css/bulma-carousel.min.css">
+<link rel="stylesheet" href="./src/css/index.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="./src/js/bulma-carousel.min.js"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script src="./src/js/index.js"></script>
 </head>
+
+<!-- Author Yunfei Liu Fa-Ting Hong Meng Cao Lijian Lin Yu L -->
 <body>
-    <div class="container">
-        <h1>Supplementary Materials: <br> AnyTalk: Multi-modal Driven Multi-domain Talking Head Generation</h1>
-        <h2>Anonymous</h2>
-        <div class="video-container">
-            <video controls>
-                <source src="static/supp_videos.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
-        <div class="pdf-container">
-            <a href="static/supplement_file.pdf" target="_blank">
-                <img src="static/thumbnail_image.png" alt="PDF Thumbnail" class="pdf-thumbnail">
-            </a>
-            <br>
-            <a href="static/supplement_file.pdf" target="_blank">View the PDF</a>
-        </div>
+<div class="content">
+  <h1><strong> AnyTalk: Multi-modal Driven Multi-domain Talking Head Generation</strong></h1>
+  <div class="gallery" style="margin-bottom: 0;">
+    <div class="row" style="justify-content: space-evenly; padding: 0; margin-bottom: 0;">
+      <figure style="width: 100%;margin: 0 0; text-align: center;">
+        <figcaption style="text-align: center;"><a href="https://rain305f.github.io/" target="_blank" style="text-decoration: none">
+          <strong>Yu Wang</strong></a></figcaption>
+      </figure> 
+      <figure style="width: 100%;margin: 0 0; text-align: center;">
+        <figcaption style="text-align: center;"><a href="http://liuyunfei.net/" target="_blank" style="text-decoration: none">
+          <strong>Yunfei Liu </strong></a></figcaption>
+      </figure>
+      <figure style="width: 100%; margin: 0 0; text-align: center;">
+      <figcaption style="text-align: center;"><a href="https://scholar.google.com/citations?user=NBV1HVIAAAAJ&hl=zh-CN" target="_blank" style="text-decoration: none">
+        <strong>Fa-Ting Hong</strong></a></figcaption>
+      </figure>
+      <figure style="width: 100%; margin: 0 0; text-align: center;">
+      <figcaption style="text-align: center;"><a href="https://scholar.google.com/citations?user=ZRbRQ0cAAAAJ&hl=zh-CN" target="_blank" style="text-decoration: none">
+        <strong>Meng Cao</strong></a></figcaption>
+      </figure>
+      <figure style="width: 100%; margin: 0 0; text-align: center;">
+        <figcaption style="text-align: center;"><a href="https://scholar.google.com.hk/citations?user=Xf5_TfcAAAAJ&hl=zh-CN" target="_blank" style="text-decoration: none">
+          <strong>Lijian Lin</strong></a></figcaption>
+        </figure>
+      <figure style="width: 100%; margin: 0 0; text-align: center;">
+      <figcaption style="text-align: center;"><a href="https://yu-li.github.io/" target="_blank" style="text-decoration: none">
+        <strong>Yu Li</strong></a></figcaption>
+      </figure>
     </div>
-</body>
-</html>
+  </div>
+  <p id="authors" style="margin-top: 5px;">
+      <span style="font-size: 13px; margin-top: 0;">
+        <sup>1</sup>  International Digital Economy Academy (IDEA) &nbsp;&nbsp;
+      </span>
+    </p>
+  <font style="font-size: 1.3em;">
+    <div style="text-align: center; display: flex; justify-content: center; gap: 40px; align-items: center;">
+
+      <a target="_blank" href="https://arxiv.org/">
+        <div style="display: flex; align-items: center;">
+          <img src="./src/img/th.png" alt="arXiv" style="width: 18px; margin-right: 2px;">
+          <span>Paper</span>
+        </div>
+      </a>
+     
+      <a target="_blank" href="https://github.com/rain305f">
+        <div style="display: flex; align-items: center;">
+          <img src="./src/img/github.png" alt="github" style="width: 18px; margin-right: 2px;">
+          <span>Code</span>
+        </div>
+      </a>
+    </div>
+
+  </font>
+</div>
+
+<div class="content">
+  <h3 style="text-align:center"><strong>Comparisons with existing methods</strong></h3>
+
+  <style>
+    #dollyzoom {
+      border: none;
+      margin: 0;
+      padding: 0;
+      display: block;
+      clip-path: inset(1px);
+    }
+  </style>
+
+  <h4>Cross-domain Reenactment——real to cartoon case1</h4>
+  <video id="dollyzoom" autoplay controls muted loop height="50%" style="border: none; margin: 0; padding: 0; display: block; outline: none;">
+    <source src="./src/video/demo1.mp4" type="video/mp4">
+  </video><br>
+  <p style="text-align: center; font-size: smaller;">
+   
+  </p>
+
+  <br><br>
+  <h4>Cross-domain Reenactment——real to cartoon case2</h4>
+  <video id="dollyzoom" autoplay controls muted loop height="50%" style="border: none; margin: 0; padding: 0; display: block;">
+    <source src="./src/video/demo2.mp4" type="video/mp4">
+  </video><br>
+  <p style="text-align: center; font-size: smaller;">
+  </p>
+
+
+  <br><br>
+  <h4>Cross-domain Reenactment——real to cartoon case3</h4>
+  <video id="dollyzoom" autoplay controls muted loop height="50%" style="border: none; margin: 0; padding: 0; display: block;">
+    <source src="./src/video/demo3.mp4" type="video/mp4">
+  </video><br>
+  <p style="text-align: center; font-size: smaller;">
+  </p>
+
+  <h4>Cross-domain Reenactment——cartoon to real case1</h4>
+  <video id="dollyzoom" autoplay controls muted loop height="50%" style="border: none; margin: 0; padding: 0; display: block; outline: none;">
+    <source src="./src/video/demo4.mp4" type="video/mp4">
+  </video><br>
+  <p style="text-align: center; font-size: smaller;">
+   
+  </p>
+
+  <br><br>
+  <h4>Cross-domain Reenactment——cartoon to real case2</h4>
+  <video id="dollyzoom" autoplay controls muted loop height="50%" style="border: none; margin: 0; padding: 0; display: block;">
+    <source src="./src/video/demo5.mp4" type="video/mp4">
+  </video><br>
+  <p style="text-align: center; font-size: smaller;">
+  </p>
+
+
+  <br><br>
+  <h4>Cross-domain Reenactment——cartoon to real case3</h4>
+  <video id="dollyzoom" autoplay controls muted loop height="50%" style="border: none; margin: 0; padding: 0; display: block;">
+    <source src="./src/video/demo8.mp4" type="video/mp4">
+  </video><br>
+  <p style="text-align: center; font-size: smaller;">
+  </p>
+
+
+<div class="content">
+  <h3 style="text-align:center"><strong>Portrait animation from a various styles (realistic, oil painting) still image with drving videos</strong></h3>
+
+  <style>
+    #tree {
+      border: none;
+      margin: 0;
+      padding: 0;
+      display: block;
+      clip-path: inset(1px);  /* 裁剪视频的边缘1个像素 */
+    }
+  </style>
+
+  <div id="carousel" class="carousel carousel-vid" style="overflow: hidden; margin-top: 0px; font-weight: bold; font-size: 1.2em">
+
+    <div class="vid-txt">
+      <video poster="" id="tree" autoplay controls muted loop>
+        <source src="./src/video/demo7.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="vid-txt">
+      <video poster="" id="tree" autoplay controls muted loop width="100%">
+        <source src="./src/video/demo8.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="content">
+  <h3 style="text-align:center"><strong>Portrait video editing with stitching</strong></h3>
+  <p style="text-align:center; font-size: medium;">All source videos are generated from a single image by <a href="https://kling.kuaishou.com/en"><strong>Kling</strong></a></p>
+
+  <style>
+    #tree {
+      border: none;
+      margin: 0;
+      padding: 0;
+      display: block;
+      clip-path: inset(1px);  /* 裁剪视频的边缘1个像素 */
+    }
+  </style>
+
+  <div id="carousel" class="carousel carousel-vid" style="overflow: hidden; margin-top: 0px; font-weight: bold; font-size: 1.2em">
+    <div class="vid-txt">
+      <video poster="" id="tree" autoplay controls muted loop width="100%">
+        <source src="./src/video/video_animation_6_opt.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="vid-txt">
+      <video poster="" id="tree" autoplay controls muted loop width="100%">
+        <source src="./src/video/video_animation_4_opt.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="vid-txt">
+      <video poster="" id="tree" autoplay controls muted loop width="100%">
+        <source src="./src/video/video_animation_1_opt.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="vid-txt">
+      <video poster="" id="tree" autoplay controls muted loop width="100%">
+        <source src="./src/video/video_animation_3_opt.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="vid-txt">
+      <video poster="" id="tree" autoplay controls muted loop width="100%">
+        <source src="./src/video/video_animation_0_opt.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+</div> -->
+
+<div class="content">
+  <h2 style="text-align:center"><strong>Abstract</strong></h2>
+  <div id="teasers">
+      <img src="./src/img/abs.png", style="display: block; margin: 0 auto; width: 95%;">
+      <figcaption></figcaption>
+  </div>
+  <br>
+  <p>
+    Cross-domain talking head generation has recently garnered increased interest in both research and practical applications due to a rising demand for personalized media, which aims to animate a static image from one domain using a video from another domain.
+    Recent efforts in cross-domain talking head generation typically rely on paired videos or separate frameworks for each domain. Besides, these methods often need extra motion alignment modules across different domains for improved expression reenactment, reducing their versatility. 
+    Moreover, previous methods primarily focus on talking heads generation across real human and cartoon human domains, but struggle with cartoon animal animations.
+    To overcome these limitations, we propose <b><span style="color: #f14040dc">AnyTalk</span></b>, a unified cross-domain talking head generation framework without the need for paired data.
+    Specifically, we first utilize an unsupervised 3D keypoint detector for learning a unified implicit keypoints in canonical space shared by different domains.
+    % enabling precise domain-agnostic motion transfer without additional alignment modules.
+    Then, we devise an expression consistency loss to capture detailed facial dynamics in cross-domain video generation.
+    Furthermore, we introduce a large-scale, high-quality cross-domain talking head dataset called <b><span style="color: #3792e7e5">AniTalk</span></b>, specifically curated to unlock the advanced multi-modal cross-domain generation ability including cross-domain face reenactment and audio-driven facial animation.
+    Experimental results demonstrate the superiority and generalization of AnyTalk for generating high-quality talking head videos driven by multi-modal signals.
+  </p>
+</div>
+<div class="content">
+  <h3 style="text-align:center"><strong>Method</strong></h3>
+  <img src="./src/img/1.png" alt="" style="display: block; margin: 0 auto; width: 70%;">
+  <p>
+    <b> An illustration of our Anytalk.</b>
+   Anytalk can be divided into three parts: i) Motion Estimation under Canonical Space, ii) Feature Warping and Image Generation, and 3) Expression Consistency Learning. Powered by the proposed AniTalk dataset, \ours learns a general and unified network for cross-domain talking head video generation.
+  </p>
+</div>
+
+<style>
+  pre {
+    font-size: 13px; /* 设置字体大小为 14px */
+  }
+</style>
+
+<div class="content">
+  <h3 style="text-align:center; margin: 0 auto;"><strong>BibTeX</strong></h3> <br>
+  <pre><code>@article{
+}</code></pre>
+</div>
+  <script>
+    var gifImage = document.getElementById('gif-image');
+
+    gifImage.addEventListener('click', function() {
+      if (gifImage.classList.contains('playing')) {
+        gifImage.classList.remove('playing');
+        gifImage.src = gifImage.src;
+      } else {
+        gifImage.classList.add('playing');
+        gifImage.src = gifImage.src;
+      }
+    });
+  </script>
+</body></html>
